@@ -14,9 +14,6 @@
 
 		$( document ).ready(function() {
 
-			$('h1,h2').slabText();
-			$('h1,h2').fitText();
-
 			var today = Date.today();
 			var rexyDay = Date.parse('April 8');
 			var $answer = $( '#fitText2' );
@@ -27,6 +24,9 @@
 				$( '.answer' ).append( 'YES!' );
 			}
 
+			$('h1,h2').slabText();
+			$('h1,h2').fitText();
+			
 		});
 
 	</script>
