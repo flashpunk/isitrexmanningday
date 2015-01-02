@@ -8,9 +8,14 @@
 	<link rel="stylesheet" href="style.css">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/datejs/1.0/date.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/slabText/2.3/jquery.slabtext.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/FitText.js/1.1/jquery.fittext.min.js"></script>
 	<script>
 
 		$( document ).ready(function() {
+
+			$('h1,h2').slabText();
+			$('h1,h2').fitText();
 
 			var today = Date.today();
 			var rexyDay = Date.parse('April 8');
