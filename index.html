@@ -1,32 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<meta property="og:image" content="http://www.isitrexmanningday.com/warren.png"/>
-<meta property="og:title" content="Is it Rex Manning day?"/>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/datejs/1.0/date.min.js"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta property="og:image" content="http://www.isitrexmanningday.com/warren.png"/>
+	<meta property="og:title" content="Is it Rex Manning day?"/>
+	<title>Is it Rex Manning day?</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/datejs/1.0/date.min.js"></script>
+	<script>
 
+		$( document ).ready(function() {
 
-<title>Is it Rex Manning day?</title>
-<link rel="stylesheet" href="style.css">
-<script>
+			var today = Date.today();
+			var rexyDay = Date.parse('April 8');
+			var $answer = $( '#fitText2' );
 
-	$( document ).ready(function() {
+			if(today!==rexyDay) {
+				$( '.answer' ).append( 'No.' );
+			} else {
+				$( '.answer' ).append( 'YES!' );
+			}
 
-		var today = Date.today();
-		var rexyDay = Date.parse('April 8');
-		var $answer = $( '#fitText2' );
+		});
 
-		if(today!==rexyDay) {
-			$( '.answer' ).append( 'No.' );
-		} else {
-			$( '.answer' ).append( 'YES!' );
-		}
-
-	});
-
-</script>
+	</script>
 	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 <body>
