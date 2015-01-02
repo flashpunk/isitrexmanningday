@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta property="og:image" content="http://www.isitrexmanningday.com/warren.png"/>
+<meta property="og:title" content="Is it Rex Manning day?"/>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/datejs/1.0/date.min.js"></script>
+
+
+<title>Is it Rex Manning day?</title>
+<link rel="stylesheet" href="style.css">
+<script>
+
+	$( document ).ready(function() {
+
+		var today = Date.today();
+		var rexyDay = Date.parse('April 8');
+		var $answer = $( '#fitText2' );
+
+		if(today!==rexyDay) {
+			$( '.answer' ).append( 'No.' );
+		} else {
+			$( '.answer' ).append( 'YES!' );
+		}
+
+	});
+
+</script>
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+<body>
+	<div id="social">
+		<div class="floatLeft"><div class="g-plusone" data-size="medium"></div></div>
+		<a href="https://twitter.com/share" class="floatLeft twitter-share-button" data-url="http://www.isitrexmanningday.com" data-text="Is it Rex Manning day? #rexManning #rexySoSexy" data-size="small" style="width:85px">Tweet</a>
+		<div class="floatLeft fb-like" data-href="http://www.isitrexmanningday.com" data-send="false" data-layout="button_count" data-width="80" data-show-faces="false" data-font="verdana"></div>
+		<div class="clearMe"></div>
+	</div>
+	<h1 id="fitText1">IS IT REX MANNING DAY?</h1>
+	<hr />
+	<h2 id="fitText2 answer" class="answer"></h2>
+	<div class="video-container"><iframe width="449" height="337" src="http://www.youtube.com/embed/qUJkM9jAzkk?rel=0" frameborder="0" allowfullscreen></iframe></div>
+	<p>Brought to you by <a href="http://www.twitter.com/flashpunk/">@flashpunk</a> &amp; <a href="http://www.twitter.com/phjoshua">@phjoshua</a></p>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=201136149952349";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	<script type="text/javascript">
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-34131124-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+	</script>
+	<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+</body>
+</html>
