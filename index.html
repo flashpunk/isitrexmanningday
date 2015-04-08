@@ -17,8 +17,12 @@
 		var today = Date.today();
 		var rexyDay = Date.parse('April 8');
 		var $answer = $( '#fitText2' );
+		var td = today.toDateString();
+		var rd = rexyDay.toDateString();
 
-		if(today!==rexyDay) {
+
+
+		if(td!==rd) {
 			$( '.answer' ).append( 'No.' );
 		} else {
 			$( '.answer' ).append( 'YES!' );
